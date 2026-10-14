@@ -1,0 +1,33 @@
+{
+  "minecraft": {
+    "host": "localhost",
+    "port": 25565,
+    "username": "AI_Bot",
+    "auth": "offline",
+    "version": ""
+  },
+  "bot_server_port": 3000,
+  "bot_api_url": "http://127.0.0.1:3000",
+  "action_timeout_seconds": 90,
+  "llm": {
+    "base_url": "http://127.0.0.1:11434/v1",
+    "model": "qwen2.5:7b-instruct-q4_K_M",
+    "api_key": "local"
+  },
+  "agent_mode": "free_play",
+  "decision_interval_seconds": 5,
+  "maximum_action_batch": 3,
+  "consecutive_error_limit": 3,
+  "memory": {
+    "short_term_limit": 20,
+    "long_term_limit": 100,
+    "long_term_file": "data/memory/long_term.json",
+    "semantic_limit": 1000,
+    "skill_limit": 300
+  },
+  "learning": {
+    "enabled": true,
+    "max_episode_actions": 8,
+    "consolidate_on_goal_completion": true
+  }
+}

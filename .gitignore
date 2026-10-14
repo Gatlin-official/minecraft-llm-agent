@@ -1,0 +1,30 @@
+# Secrets / local config
+.env
+.env.*
+!.env.example
+config/config.json
+
+# Dependencies / envs
+node_modules/
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Runtime data (learned memory can be large and machine-specific)
+data/runtime/
+data/memory/*.json
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

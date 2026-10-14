@@ -1,0 +1,16 @@
+{
+  "name": "minecraft-autonomous-ai",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Local autonomous Minecraft Java AI agent",
+  "main": "bot/src/server.js",
+  "scripts": {
+    "start": "node bot/src/server.js",
+    "check": "node --check bot/src/server.js && node --check bot/src/actions.js && node --check bot/src/requirements.js"
+  },
+  "dependencies": {
+    "mineflayer": "^4.32.0",
+    "mineflayer-pathfinder": "^2.4.5",
+    "vec3": "^0.1.10"
+  }
+}
